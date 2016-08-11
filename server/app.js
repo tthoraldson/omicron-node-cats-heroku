@@ -13,7 +13,7 @@ app.get('/cat', function(req, res) {
   res.send(cats);
 });
 
-app.post('/new', function(req, res) {
+app.post('/cat', function(req, res) {
   console.log('request: ', req.body);
   cats.push(req.body);
   res.sendStatus(201);
